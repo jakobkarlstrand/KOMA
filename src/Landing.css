@@ -1,0 +1,33 @@
+.welcome{
+  text-align: center;
+  color: white;
+}
+
+.landing-container{
+  background-color: rgba(40, 144, 230, 0.486);
+  height: 100vh;
+  
+}
+
+.welcome-info{
+  text-align: center;
+}
+#enter{
+  text-align: center;
+}
+
+.buttonEnter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5vh;
+}
+
+.changeToCourse{
+  text-align: center;
+  margin-top: -10px;
+}
+.drop{
+  display: flex;
+  justify-content: center;
+}

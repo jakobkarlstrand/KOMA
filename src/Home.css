@@ -1,0 +1,66 @@
+body{
+    background-color: #0086b3;
+
+}
+
+.counter-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #00394d;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    color: white;
+    font-size: 60px;
+    margin-top: 25px;
+}
+
+.wrapper-counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.lowerButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    background-color: #FAA629;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.upperButtons{
+    display: flex;
+    flex-direction: row;
+}
+
+.helpButtonWrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+.settingsButtonWrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+.settingsButton{
+    padding: 10px 10px 10px 10px;
+}
+.helpButton{
+    padding: 10px 10px 10px 10px;
+}
