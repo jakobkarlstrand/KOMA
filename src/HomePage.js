@@ -7,7 +7,6 @@ import task from './images/task.svg'
 import circle from './images/circle.png'
 import Dropdown from 'react-dropdown';
 import './Home.css'
-import './Landing.css';
 import {
     BrowserRouter as Router,
     Switch,
@@ -69,7 +68,12 @@ function HomePage() {
                 
                 <div className="wrapper-counter">
                     <div className="counter-container">
-                        <h1>2</h1>
+                        <div className="theh1">
+                            <h1>2</h1>
+                        </div>   
+                        <div className="thep">
+                            <p>dagar</p>
+                        </div>
                     </div>
                 </div>
                 </div>
@@ -80,39 +84,39 @@ function HomePage() {
     </svg>
 </div>
 </div>
-    <div className="icon-wrapper">
-        <div className="img1">
-            <img src={task}/>
+    
+    <div className="infoTable">
+        <div className="icon-wrapper">
+            <div className="img1">
+                <img src={task}/>
+            </div>
+            <div className="img2">
+                <img src={days}/>
+            </div>
         </div>
-        <div className="img2">
-            <img src={days}/>
-        </div>
+        <InfoRow course="TNA006" type="Tenta" daysLeft="2"></InfoRow>
+        <InfoRow course="TNM046" type="Tenta" daysLeft="4"></InfoRow>
+        <InfoRow course="PRIVAT" type="Ansöka om jobb" daysLeft="6"></InfoRow>
+        <InfoRow course="TNM043" type="Inlämning" daysLeft="9"></InfoRow>
+        <InfoRow course="TNA006" type="Tenta" daysLeft="11"></InfoRow>
+        <InfoRow course="TNM046" type="Tenta" daysLeft="12"></InfoRow>
+        <InfoRow course="PRIVAT" type="Ansöka om jobb" daysLeft="12"></InfoRow>
+        <InfoRow course="TNM043" type="Inlämning" daysLeft="20"></InfoRow>
+        <InfoRow course="TNM043" type="Inlämning" daysLeft="20"></InfoRow>
+        <InfoRow course="TNM043" type="Inlämning" daysLeft="20"></InfoRow>
+        <InfoRow course="TNM043" type="Inlämning" daysLeft="20"></InfoRow>
+    </div>
+    <div className="stickyBoi">
 
     </div>
-                <div className="infoTable">
-                    <InfoRow course="TNA006" type="Tenta" daysLeft="2"></InfoRow>
-                    <InfoRow course="TNM046" type="Tenta" daysLeft="4"></InfoRow>
-                    <InfoRow course="PRIVAT" type="Ansöka om jobb" daysLeft="6"></InfoRow>
-                    <InfoRow course="TNM043" type="Inlämning" daysLeft="9"></InfoRow>
-                    <InfoRow course="TNA006" type="Tenta" daysLeft="11"></InfoRow>
-                    <InfoRow course="TNM046" type="Tenta" daysLeft="12"></InfoRow>
-                    <InfoRow course="PRIVAT" type="Ansöka om jobb" daysLeft="12"></InfoRow>
-                    <InfoRow course="TNM043" type="Inlämning" daysLeft="20"></InfoRow>
-                    <InfoRow course="TNM043" type="Inlämning" daysLeft="20"></InfoRow>
-                    <InfoRow course="TNM043" type="Inlämning" daysLeft="20"></InfoRow>
-                    <InfoRow course="TNM043" type="Inlämning" daysLeft="20"></InfoRow>
-                </div>
-                <div className="stickyBoi">
+    <div className="lowerButton">
+        <Link to="add">
+            <div className="addButton"><img className="addIcon" src={addIcon}></img></div>
+        </Link>
+    </div>
+    <div className="gap">
 
-                </div>
-                <div className="lowerButton">
-                    <Link to="add">
-                        <div className="addButton"><img className="addIcon" src={addIcon}></img></div>
-                    </Link>
-                </div>
-                <div className="gap">
-
-                </div>
+    </div>
             </div>
         </body>
     </html>

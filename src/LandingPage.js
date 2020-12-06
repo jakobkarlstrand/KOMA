@@ -1,6 +1,8 @@
+import video from './images/welcome.mp4';
 import logo from './logo.svg';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
+import Background from './images/liu.jfif';
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,6 +15,10 @@ function LandingPage() {
   return (
     <body>
         <div className="landing-container">
+		<video autoPlay muted loop id="myVideo" className="theVideo">
+			<source src={video} type="video/mp4"/>
+		</video>
+		<img className="backgroundIMG" src={Background}/>
             <div className="welcome">
                 <h1>UNITTRACKER</h1>
             </div>
@@ -29,6 +35,7 @@ function LandingPage() {
             <div className="changeToCourse">
               <h6>Växla till kurser</h6>
             </div>
+
         </div>
     </body>
   );
