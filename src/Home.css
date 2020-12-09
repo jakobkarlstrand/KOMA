@@ -8,7 +8,6 @@ body{
 height: 100%;
 margin: 0;
 overflow: scroll;
-
 }
 
 html{
@@ -44,6 +43,8 @@ html{
     padding: 0;
 }
 .theh1{
+    font-size: 70px;
+    font-style: normal;
     display: flex;
     justify-content: flex-end;
 }
@@ -53,6 +54,7 @@ html{
     align-items: center;
     justify-content: flex-start;
     font-weight: bold;
+    margin-top: -30px;
 }
 .counter-container h1{
     text-shadow: 1px 2px black;
@@ -72,7 +74,6 @@ html{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: ;
 }
 
 .lowerButton{
@@ -87,7 +88,7 @@ html{
     justify-content: center;
     align-items: center;
     font-size: 60px;
-    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+    background-image: linear-gradient(225deg, rgba(250,166,41,1) 0%, rgba(250,202,41,1) 100%);
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -133,12 +134,15 @@ box-shadow: 10px 10px 31px -9px rgba(0,0,0,0.75);
  flex-direction: column;
  justify-content: center; 
  align-items: center;
+ padding-left: 15px;
+ padding-right: 15px;
 }
 .infoTable table{
    width: 100%
    }
 .smallCircle{
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    /*background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);*/
+    border: 1px solid #194d88;
     width: 50px;
     height: 50px;
     display: flex;
@@ -191,7 +195,7 @@ box-shadow: 10px 10px 31px -9px rgba(0,0,0,0.75);
     width: 95%;
     display: flex;
     flex-direction: row;
-    border-radius: 10px;
+    border-radius: 4px;
     padding: 0;
     margin-bottom: 10px;
     background-image: linear-gradient(to top, #fdfbfb 20%, #ebedee 100%);
@@ -203,12 +207,14 @@ box-shadow: 0px 0px 25px -12px rgba(0,0,0,0.55);
 }
 .rowContainer h3{
   font-size: 1.7em;
-  font-weight: 300;
+  font-weight: 100 !important;
   text-transform: uppercase;
   margin: 0;
+  font-style: normal !important;
 }
 .rowContainer h5{
     margin: 0;
+    font-weight: 100;
 }
 .leftLeft{
     display: flex;
@@ -239,12 +245,15 @@ box-shadow: 0px 0px 25px -12px rgba(0,0,0,0.55);
 }
 .uppderDiv{
     display: flex;
+    
     justify-content: flex-start;
     align-items: flex-start;
     padding: 0;
     margin: 0;
 }
-
+.uppderDiv h3{
+    font-weight: 100;
+}
 .header-container{
     z-index: 99;
     background-image: linear-gradient(to top, #fdfbfb 20%, #ebedee 100%);

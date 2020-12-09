@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import Dropdown from 'react-dropdown';
+import chev from './images/chevron.svg';
 import './Details.css'
 import {
     BrowserRouter as Router,
@@ -17,14 +18,24 @@ function Details() {
 
   return (
     <body>
-        <div className="container">
+        <div className="cont">
             <div className="pageTitle">
                 <h1>KURS: {course}</h1>
                 <h1>TYP: {type}</h1>
                 <h1>days: {daysLeft}</h1>
+                <h2>Lägg till anteckning</h2>
             </div>
-            <div className="goBack">
-                <Link to="/home">TILLBAKA</Link>
+
+            <div className="note">
+           
+             <input></input>
+            
+           </div>
+           
+            <div className="linkTillbaka">
+                <Link to="/home"> 
+                 <img className="chev" src={chev}/>
+                 </Link>
             </div>
         </div>
             

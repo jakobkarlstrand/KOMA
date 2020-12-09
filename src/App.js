@@ -1,8 +1,7 @@
 import logo from './logo.svg';
-import './Home.css';
 import './Landing.css';
-import './LandingPage'
 import AddNew from './AddNew'
+import AddCourse from './AddCourse'
 import LandingPage from './LandingPage';
 import HomePage from './HomePage'
 import CreateNewDeadLine from './CreateNewDeadline'
@@ -30,6 +29,9 @@ function App() {
       </Route>
       <Route path="/details/:course/:type/:daysLeft">
         <Details></Details>
+      </Route>
+      <Route path="/addCourse">
+        <AddCourse></AddCourse>
       </Route>
       <Route path="/">
         <LandingPage></LandingPage>
